@@ -49,7 +49,7 @@ class MoviesAdapter(private val context: Context, private val list: ArrayList<Mo
         holder.bind(list[position])
     }
 
-    fun update(newList: List<Movie>) {
+    fun updateData(newList: List<Movie>) {
         list.clear()
         val sortedList =newList.sortedBy { movie -> movie.popularity }
         list.addAll(sortedList)

@@ -1,6 +1,13 @@
 package com.projects.tmdb.model
 
-data class Movie (
+import androidx.annotation.NonNull
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity
+data class Movie(
+    @NonNull
+    @PrimaryKey
     val id: Int,
     val title: String?,
     val overview: String?,

@@ -1,7 +1,5 @@
 package com.projects.tmdb.model
 
-import java.lang.Error
-
 /**
  * Generic class for holding success response, error response and loading status
  */
